@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink_200">#f48fb1</color>
+    <color name="pink_500">#f06292</color>
+    <color name="pink_700">#ba2d65</color>
+    <color name="deep_purple_200">#b47cff</color>
+    <color name="deep_purple_700">#7c4dff</color>
+    <color name="deep_blue_200">#1e88e5</color>
+    <color name="deep_blue_700">#005cb2</color>
+    <color name="deep_purple_light">#46434A</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_text">#a094b7</color>
+    <color name="sec_text">#d1c4e9</color>
+
+    <color name="surface_dark">#222121</color>
+    <color name="background">#424242</color>
+    <color name="primary_vari">#212121</color>
+</resources>
