@@ -16,11 +16,19 @@
         android:background="@drawable/search"
         />
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hor_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/productRecycle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_gravity="center_horizontal"
-        tools:listitem="@layout/slider_horizon"/>
+        android:layout_marginTop="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/slider_horizon" />
 
 
 </LinearLayout>

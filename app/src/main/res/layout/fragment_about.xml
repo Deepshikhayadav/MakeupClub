@@ -5,120 +5,187 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.about.AboutFragment"
-    android:padding="10dp">
+    tools:context=".ui.about.AboutFragment">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_margin="10dp"
-        android:src="@drawable/ic_baseline_account_circle_24"
-        app:civ_border_width="1dp"
-        app:civ_border_color="#FF000000"
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
         android:scaleType="centerCrop"
+        android:src="@drawable/menu"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/beautypic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/semi_bold"
-        android:text="Deepshikha yadav"
-        android:textColor="@color/black"
-        android:textSize="32sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile"
-        android:layout_margin="8dp"/>
-
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:backgroundTint="@color/white"
+        style="@style/ShapeAppearanceOverlay_card_custom_corners"
+        android:layout_marginTop="210dp"
         app:cardElevation="5dp"
-        android:backgroundTint="@color/white">
-       <LinearLayout
-           android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+           android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:orientation="vertical">
+           android:orientation="horizontal"
+           android:layout_margin="10dp">
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/profile"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:layout_margin="10dp"
+               android:src="@drawable/palette"
+               app:civ_border_width="1dp"
+               app:civ_border_color="#FF000000"
+               android:scaleType="centerCrop"
+               />
            <LinearLayout
+               android:layout_marginTop="10dp"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:orientation="horizontal">
+               android:orientation="vertical">
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="Contact no :"
-                   android:textColor="@color/pink_500"
-                   android:textSize="20sp"
-                   android:fontFamily="@font/semi_bold"
-                   android:layout_margin="10dp"/>
+                   android:text="Deepshikha yadav"
+                   android:textStyle="bold"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginBottom="5dp"
+                   android:textSize="20sp"/>
                <TextView
-                   android:id="@+id/no"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="8956523200"
-                   android:textSize="20sp"
-                   android:textColor="@color/pink_500"
-                   android:fontFamily="@font/thin"
-                   android:layout_margin="10dp"/>
+                   android:text="Android Developer"
+                   android:layout_marginStart="10dp"
+                   android:textSize="15sp"/>
+
            </LinearLayout>
+       </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_star_border_24"
+            android:background="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.8 Rating"
+            android:textColor="@color/pink_500"
+            android:textSize="15sp"
+            android:layout_margin="3dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_group_24"
+            android:background="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="264 Reviews"
+            android:textColor="@color/pink_500"
+            android:textSize="15sp"
+            android:layout_margin="3dp"/>
+
+    </LinearLayout>
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_outline_description_24"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_margin="3dp"
+                    android:text="@string/desc"
+                    />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_access_time_24"
+                    android:background="@null"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Products :"
-                    android:textColor="@color/pink_500"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/semi_bold"
-                    android:layout_margin="10dp"/>
-                <TextView
-                    android:id="@+id/no2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lip Balm"
-                    android:textSize="20sp"
-                    android:textColor="@color/pink_500"
-                    android:fontFamily="@font/thin"
-                    android:layout_margin="10dp"/>
+                    android:textSize="15sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="3dp"
+                    android:text="Mon-Sat, 9AM - 8PM "
+                    />
             </LinearLayout>
-           <LinearLayout
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:orientation="horizontal">
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Quantity :"
-                   android:textColor="@color/pink_500"
-                   android:textSize="20sp"
-                   android:fontFamily="@font/semi_bold"
-                   android:layout_margin="10dp"/>
-               <TextView
-                   android:id="@+id/no3"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="9"
-                   android:textColor="@color/pink_500"
-                   android:textSize="20sp"
-                   android:fontFamily="@font/thin"
-                   android:layout_margin="10dp"/>
-           </LinearLayout>
-
-       </LinearLayout>
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,62 +7,72 @@
     android:layout_margin="8dp"
     app:cardCornerRadius="8dp"
     app:cardElevation="10dp"
-    >
+    app:cardBackgroundColor="@color/white">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
 
     <ImageView
-        android:layout_width="320dp"
-        android:layout_height="180dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/growth"/>
-
-    <TextView
+        android:id="@+id/img"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:contentDescription="img"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/growth" />
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$5"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="10dp"/>
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:fontFamily="@font/semi_bold"
-        android:textSize="16sp"
-        android:text="Deepu"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:id="@+id/price_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price : $"
+            android:textSize="21sp"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="21sp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/productName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="12dp"
-        android:textSize="14sp"
+        android:fontFamily="@font/semi_bold"
+        android:text="Deepu hii namrjhjkfhw  "
+        android:textSize="16sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/extra_light"
         android:text="Deepu is cute"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="14sp"
+        android:gravity="center_horizontal" />
 
     <Button
+        android:id="@+id/buy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buy"
+        android:textColor="@color/white"
         android:backgroundTint="@color/deep_blue_200"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
 </com.google.android.material.card.MaterialCardView>
