@@ -1,11 +1,7 @@
 # MakeupClub
-![WhatsApp Image 2021-12-06 at 8 23 23 PM (5)](https://user-images.githubusercontent.com/58137357/144868422-52e00997-a7ef-4fa4-bb8f-0d9fb9fae01a.jpeg
-![WhatsApp Image 2021-12-06 at 8 23 23 PM (4)](https://user-images.githubusercontent.com/58137357/144868499-eb7348fa-ddbb-4c9a-a2b9-0f859ed1d7f0.jpeg)
-)
-![WhatsApp Image 2021-12-06 at 8 23 23 PM (3)](https://user-images.githubusercontent.com/58137357/144868462-e8a4bc14-cecd-41a5
-![WhatsApp Image 2021-12-06 at 8 23 23 PM (2)](https://user-images.githubusercontent.com/58137357/144868589-27e25d54-4f7e-4aa0-b1d6-4b662f26a6ae.jpeg)
-![WhatsApp Image 2021-12-06 at 8 23 23 PM](https://user-images.githubusercontent.com/58137357/144868622-e36a1694-f171-4bc5-a2b4-b4841cc95d97.jpeg)
-
-![WhatsApp Image 2021-12-06 at 8 23 23 PM (1)](https://user-images.githubusercontent.com/58137357/144868610-759526c3-f492-4373-a0d0-1ea3e594e14f.jpeg)
-
--90b6-08890852303f.jpeg)
+![home](https://user-images.githubusercontent.com/58137357/144869058-5f5d3615-0e04-4e5e-8ec9-a38a4faea1cb.jpeg)
+![load](https://user-images.githubusercontent.com/58137357/144869127-58a484c8-46e4-4684-be59-9c7802ebeff5.jpeg)
+![details](https://user-images.githubusercontent.com/58137357/144869136-5bdfc197-5728-45cb-9764-7d213784cc8f.jpeg)
+![product](https://user-images.githubusercontent.com/58137357/144869138-19379ee6-e46b-472e-9953-58c02a747e72.jpeg)
+![success](https://user-images.githubusercontent.com/58137357/144869147-4fa982bc-fd24-4162-9eb4-9ddb5e1833d4.jpeg)
+![profile](https://user-images.githubusercontent.com/58137357/144869151-99f9936e-8c41-4dea-b401-2553c1084cae.jpeg)
