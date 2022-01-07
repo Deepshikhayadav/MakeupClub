@@ -11,6 +11,5 @@ data class MyResponse (
     val imageLink: String,
     val description: String,
     val category: String,
-    val product_type: String
-        )
+    val product_type: String)
 

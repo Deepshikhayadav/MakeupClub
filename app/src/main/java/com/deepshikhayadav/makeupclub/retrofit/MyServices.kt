@@ -17,5 +17,3 @@ interface MyServices {
     @GET("api/v1/products.json")
     suspend fun getData3(@Query("category") category: String): List<MyResponse>
 }
-
-// brand=colourpop"

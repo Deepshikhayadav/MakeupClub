@@ -24,14 +24,10 @@ class ProductAdapter(private val res: List<MyResponse>) : RecyclerView.Adapter<P
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):MyViewHolder {
         val view= LayoutInflater.from(parent.context).inflate(R.layout.slider_horizon,parent,false)
         val viewHolder= MyViewHolder(view)
-
         view.setOnClickListener{
-
         }
         return viewHolder
     }
-
-
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int)=holder.bind(res[position])
 
@@ -52,7 +48,6 @@ class ProductAdapter(private val res: List<MyResponse>) : RecyclerView.Adapter<P
                 dashboardFragment.showMyDialog(it.context)
             }
         }
-
 
     }
 }

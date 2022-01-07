@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.slider_horizon.view.*
 
 class CategoryAdapter(private val res: List<MyResponse>) : RecyclerView.Adapter<CategoryAdapter.myViewHolder>() {
     class myViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
         fun bind(myResponse: MyResponse){
             itemView.productName.text=myResponse.category
             itemView.category.text=myResponse.description
@@ -38,7 +37,5 @@ class CategoryAdapter(private val res: List<MyResponse>) : RecyclerView.Adapter<
     override fun onBindViewHolder(holder: myViewHolder, position: Int) =holder.bind(res[position])
 
     override fun getItemCount(): Int = res.count()
-
-
 
 }

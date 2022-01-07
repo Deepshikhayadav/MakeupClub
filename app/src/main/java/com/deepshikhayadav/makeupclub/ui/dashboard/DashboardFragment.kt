@@ -33,8 +33,6 @@ class DashboardFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
 
 
-        //showDialogue()
-
         val recyclerView: RecyclerView = root.findViewById(R.id.hor_tab)
         val brand= Suppliers.brands
         recyclerView.setHasFixedSize(true)
@@ -49,15 +47,14 @@ class DashboardFragment : Fragment() {
         dialog.show()
 
 
-        dashboardViewModel.properties.observe(viewLifecycleOwner, Observer {
+        dashboardViewModel.properties.observe(viewLifecycleOwner) {
             dialog.dismiss()
-
             val recyclerView2: RecyclerView = root.findViewById(R.id.productRecycle)
             recyclerView2.setHasFixedSize(true)
             recyclerView2.itemAnimator = DefaultItemAnimator()
             recyclerView2.adapter = ProductAdapter(it)
 
-        })
+        }
         return root
     }
 

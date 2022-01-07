@@ -19,13 +19,10 @@ import kotlinx.android.synthetic.main.hor_tablayout.view.*
 class Hor_tabAdapter (val viewModel:DashboardViewModel, private val res: List<BrandModel>) : RecyclerView.Adapter<Hor_tabAdapter.MyViewHolder>() {
 private val myConst:Int=1
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
         fun bind(brandModel: BrandModel){
             itemView.tab.text=brandModel.brand
         }
-
     }
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view= LayoutInflater.from(parent.context).inflate(R.layout.hor_tablayout,parent,false)

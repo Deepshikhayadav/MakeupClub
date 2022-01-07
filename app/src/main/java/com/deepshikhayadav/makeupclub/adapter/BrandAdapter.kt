@@ -21,12 +21,11 @@ import com.deepshikhayadav.makeupclub.model.MyResponse
 import com.deepshikhayadav.makeupclub.ui.home.HomeFragment
 import kotlinx.android.synthetic.main.hor_rec_resource.view.*
 
-class BrandAdapter(private val res: List<BrandModel>/*,private val listener: HorItemClicked*/) : RecyclerView.Adapter<MyViewHolder>() {
+class BrandAdapter(private val res: List<BrandModel>) : RecyclerView.Adapter<MyViewHolder>() {
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(brandModel: BrandModel){
-
             itemView.name.text=brandModel.brand
             Glide.with(itemView.imageView.context)
                 .load(brandModel.link)
@@ -35,7 +34,6 @@ class BrandAdapter(private val res: List<BrandModel>/*,private val listener: Hor
         }
 
     }
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view= LayoutInflater.from(parent.context).inflate(R.layout.hor_rec_resource,parent,false)

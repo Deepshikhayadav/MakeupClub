@@ -18,11 +18,13 @@ import com.deepshikhayadav.makeupclub.adapter.ProductAdapter
 import com.deepshikhayadav.makeupclub.model.Suppliers
 import com.deepshikhayadav.makeupclub.ui.dashboard.DashboardViewModel
 import kotlinx.android.synthetic.main.activity_products_.*
+import kotlinx.coroutines.DelicateCoroutinesApi
 import java.lang.Exception
 
 class Products_Activity : AppCompatActivity() {
     private lateinit var myViewModel: DashboardViewModel
 
+    @OptIn(DelicateCoroutinesApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_products_)
@@ -32,7 +34,7 @@ class Products_Activity : AppCompatActivity() {
             var s = bundle!!.getString("cat")
             var i = bundle.getInt("con")
 
-            myViewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
+            myViewModel = ViewModelProvider(this)[DashboardViewModel::class.java]
             myViewModel.makeupResponse(s.toString(), i)
 
             val recyclerView2: RecyclerView = findViewById(R.id.product_recycle)
@@ -40,12 +42,10 @@ class Products_Activity : AppCompatActivity() {
             recyclerView2.itemAnimator = DefaultItemAnimator()
 
 
-            myViewModel.properties.observe(this, {
+            myViewModel.properties.observe(this) {
                 progresss.visibility = View.GONE
-
                 recyclerView2.adapter = CategoryAdapter(it)
-
-            })
+            }
         }
         catch (e:Exception){
             Log.i("------",e.localizedMessage)
